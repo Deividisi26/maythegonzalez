@@ -1,0 +1,52 @@
+version: "3.7"
+
+services:
+  app:
+    build:
+      args:
+        user: devlaravelninacode
+        uid: 1000
+      context: ./
+      dockerfile: Dockerfile
+    image: devlaravelninacode
+    container_name: devlaravelninacode-app
+    restart: unless-stopped
+    working_dir: /var/www/
+    volumes:
+      - ./app:/var/www
+      - ./docker-compose/php/project.ini:/usr/local/etc/php/conf.d/project.ini
+    networks:
+      - devlaravelninacode
+
+  db:
+    image: mariadb:10.7
+    container_name: devlaravelninacode-db
+    restart: unless-stopped
+    ports:
+      - 33306:3306
+    environment:
+      MARIADB_DATABASE: devlaravelninacode
+      MARIADB_ROOT_PASSWORD: devlaravelninacode
+      MARIADB_PASSWORD: devlaravelninacode
+      MARIADB_USER: devlaravelninacode
+    volumes:
+      - ./docker-compose/mysql/init:/docker-entrypoint-initdb.d
+      - ./docker-compose/mysql/persistent:/var/lib/mysql
+    networks:
+      - devlaravelninacode
+
+  nginx:
+    image: nginx:1.21-alpine
+    container_name: devlaravelninacode-nginx
+    restart: unless-stopped
+    ports:
+      - 9000:80
+    volumes:
+      - ./app:/var/www
+      - ./docker-compose/nginx:/etc/nginx/conf.d
+    networks:
+        - devlaravelninacode
+
+networks:
+  devlaravelninacode:
+    driver: bridge
