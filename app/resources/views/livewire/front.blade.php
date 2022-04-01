@@ -97,12 +97,7 @@
                 <div class="bg-white/50 h-auto w-full sm:rounded-lg py-10">
                     <div id="inicio" class=" h-[300px]  w-[250px] border-[15px] pt-2 md:h-[700px] md:w-[600px] md:border-[35px] md:pt-32 sm:h-[500px] sm:w-[400px] sm:border-[20px] sm:pt-10 bg-[#f2a7ad] my-10 mx-auto border-white border-double rounded-3xl  ">
                         <div class="p-10 text-center">
-<<<<<<< HEAD
-                            <p class="">Estas </p>
-                            <p>Invitado</p>
-                            <p>A Festejar Conmigo</p>
-                            <p>Mi Cumple<p>
-=======
+
                             <p class=" font-sans text-white font-bold text-xs -mb-10 mt-8 sm:text-lg sm:-mb-10 sm:mt-10 md:text-2xl md:-mb-10">ESTAS INVITADO A MI</p>
 
                         </div>
@@ -141,7 +136,6 @@
                                 </div>
                             </div>
 
->>>>>>> 55790b031779a068e61931f89305a402c9db9004
                         </div>
                         <div class="bg-white p-3 flex justify-center flex-row " >
                             <div>
@@ -172,7 +166,7 @@
                         <div class="">
                             <iframe class="w-[250px] h-[350px] sm:w-[500px] sm:h-[450px] md:w-[600px] md:h-[450px] rounded-b-lg" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3735.8717644441185!2d-99.3275746!3d20.5524271!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb0cc8b6db4ed1dd8!2zMjDCsDMzJzEwLjkiTiA5OcKwMTknMzYuOSJX!5e0!3m2!1ses-419!2smx!4v1648794082733!5m2!1ses-419!2smx" width="" height="" style="" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        <div class=" bg-[#f2a7ad] hover:bg-[#ee8a92] mx-auto px-1 w-16 h-6 border-[2px] mt-5 sm:w-28 sm:h-12 sm:border-[3px] sm:py-1 sm:mt-20 md:w-20 md:h-12 md:border-[4px] md:py-1 md:mt-28 rounded-3xl border-white border-solid  text-center">
+                        <div class=" bg-[#f2a7ad] hover:bg-[#ee8a92] mx-auto px-1 w-16 h-6 border-[2px] mt-5 sm:w-24 sm:h-12 sm:border-[3px] sm:py-1 sm:mt-20 md:w-28 md:h-12 md:border-[4px] md:py-1 md:mt-28 rounded-3xl border-white border-solid  text-center">
                             <a href="#top" class=" text-white text-[9px] sm:text-sm md:text-base font-medium flex sm:px-2 py-1 ">
                                 Ir Arriba
                             <a>
@@ -185,11 +179,6 @@
             
         </div>
 
-<<<<<<< HEAD
-       
-=======
-        
->>>>>>> 55790b031779a068e61931f89305a402c9db9004
         @livewireScripts
     </body>
 </html>

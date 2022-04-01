@@ -6,24 +6,18 @@
         <link href="{{ asset('css/front.css') }}" rel="stylesheet">
 	<title>Happy Birthday</title>
 	<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-<<<<<<< HEAD
+
 	@livewireStyles
     
     </head>
     <body>
 
-	{{ $slot }}
-	@livewireScripts
 	
-=======
-        @livewireStyles
     
-    </head>
-    <body>
   
 
         {{ $slot }}
         @livewireScripts
->>>>>>> 55790b031779a068e61931f89305a402c9db9004
+
     </body>
 </html>
