@@ -1,9 +1,9 @@
-<nav class="bg-white" x-data="{ open: false}">
+<nav class=" bg-white" x-data="{ open: false}">
     <div class="max-w-full mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex items-center justify-center h-16">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
-          <button x-on:click="open = true " type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+          <button x-on:click="open = true " type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-[#ee8a92] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
             <!--
               Icon when menu is closed.
@@ -31,13 +31,13 @@
           <div class="hidden sm:block sm:ml-6">
             <div class="flex space-x-20">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="#" class="text-gray-900 hover:bg-sky-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Fecha</a>
+              <a href="#inicio" class="text-gray-900 hover:bg-[#ee8a92] hover:text-white px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
   
-              <a href="#" class="text-gray-900 hover:bg-sky-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Team</a>
+              <a href="#detalles" class="text-gray-900 hover:bg-[#ee8a92] hover:text-white px-3 py-2 rounded-md text-sm font-medium">Detalles</a>
   
-              <a href="#" class="text-gray-900 hover:bg-sky-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+              <a href="#mapa" class="text-gray-900 hover:bg-[#ee8a92] hover:text-white px-3 py-2 rounded-md text-sm font-medium">¿como llegar?</a>
   
-              <a href="#" class="text-gray-900 hover:bg-sky-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Calendar</a>
+              <a href="#confir" class="text-gray-900 hover:bg-[#ee8a92] hover:text-white px-3 py-2 rounded-md text-sm font-medium">confirma</a>
             </div>
           </div>
         </div>
@@ -49,13 +49,13 @@
     <div class="sm:hidden" id="mobile-menu" x-show="open" x-on:click.away= "open= false">
       <div  class="px-2 pt-2 pb-3 space-y-1">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">fecha</a>
+        <a href="#inicio" class="text-gray-900 hover:bg-[#ee8a92] hover:text-white block px-3 py-2 rounded-md text-base font-medium">Inicio</a>
   
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
+        <a href="#detalles" class="text-gray-900 hover:bg-[#ee8a92] hover:text-white block px-3 py-2 rounded-md text-base font-medium">Detalle</a>
   
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+        <a href="#mapa" class="text-gray-900 hover:bg-[#ee8a92] hover:text-white block px-3 py-2 rounded-md text-base font-medium">¿como llegar?</a>
   
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+        <a href="#confir" class="text-gray-900 hover:bg-[#ee8a92] hover:text-white block px-3 py-2 rounded-md text-base font-medium">Confirmar</a>
       </div>
     </div>
 </nav>

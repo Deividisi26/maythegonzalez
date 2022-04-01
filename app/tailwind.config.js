@@ -8,6 +8,9 @@ module.exports = {
   ],
   darkMode: 'class',	
   theme: {
+    fontFamily:{
+      'paci':['Pacifico']
+    },
     container: {
       center: true,
       
