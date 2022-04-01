@@ -28,7 +28,7 @@
                             <p class="">Estas </p>
                             <p>Invitado</p>
                             <p>A Festejar Conmigo</p>
-                            <p>Mi Cumpleaños</p>
+                            <p>Mi Cumple<p>
                         </div>
 
                     </div>
@@ -39,7 +39,7 @@
             
         </div>
 
-           
+       
         @livewireScripts
     </body>
 </html>
