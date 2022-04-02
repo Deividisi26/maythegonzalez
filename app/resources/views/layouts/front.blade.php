@@ -9,8 +9,11 @@
 
 	@livewireStyles
     
+    
     </head>
     <body>
+        @livewire('navigation')
+    
 
 	
     

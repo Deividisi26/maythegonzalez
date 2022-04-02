@@ -6,35 +6,43 @@
         <link href="{{ asset('css/front.css') }}" rel="stylesheet">
 	<title>Happy Birthday</title>
 	<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-        @livewireStyles
-    <style>
-        .imagen{ 
-            background-image: url("{{asset('img/f3.jpg')}}");
-            height: 900px;
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function onSubmit(token) {
+          document.getElementById("demo-form").submit();
         }
+    </script>
+    @livewireStyles
+    <style>
+        
+        .imagen{ 
+            background-image: url("{{asset('img/f0.jpg')}}");
+            height: 600px;
+        }
+        
         .pastel{
-            background-image: url("{{asset('img/f6.jpg')}}");
+            background-image: url("{{asset('img/c5.jpg')}}");
             width: 250px;
             height: 250px;
             
            
         }
         .punto{
-            background-image: url("{{asset('img/f7.png')}}");
+            background-image: url("{{asset('img/c3.png')}}");
             width: 30px;
             height: 30px;
             
            
         }
         .fecha{
-            background-image: url("{{asset('img/f8.png')}}");
+            background-image: url("{{asset('img/c2.png')}}");
             width: 30px;
             height: 30px;
             
            
         }
         .confirma{
-            background-image: url("{{asset('img/f9.png')}}");
+            background-image: url("{{asset('img/c1.png')}}");
             width: 250px;
             height: 250px;
             
@@ -42,28 +50,28 @@
         }
         @media (min-width: 640px) { 
             .pastel{
-            background-image: url("{{asset('img/f6.jpg')}}");
+            background-image: url("{{asset('img/c5.jpg')}}");
             width: 350px;
             height: 350px;
             
            
             }
             .fecha{
-            background-image: url("{{asset('img/f8.png')}}");
+            background-image: url("{{asset('img/c2.png')}}");
             width: 50px;
             height: 50px;
             
            
             }
             .punto{
-            background-image: url("{{asset('img/f7.png')}}");
+            background-image: url("{{asset('img/c3.png')}}");
             width: 50px;
             height: 50px;
             }
         }
         @media (min-width: 768px) { 
             .pastel{
-            background-image: url("{{asset('img/f6.jpg')}}");
+            background-image: url("{{asset('img/c5.jpg')}}");
             width: 400px;
             height: 400px;
 
@@ -72,12 +80,16 @@
             
            
             }
+            .imagen{ 
+            background-image: url("{{asset('img/f0.jpg')}}");
+            height: 800px;
+            }
             
 
         }
         @media (min-width: 1001px) { 
             .pastel{
-            background-image: url("{{asset('img/f6.jpg')}}");
+            background-image: url("{{asset('img/c5.jpg')}}");
             width: 500px;
             height: 500px;
             
@@ -89,34 +101,38 @@
     </style>
     </head>
     <body>
-        @livewire('navigation')
+        
         <div class="imagen bg-cover bg-fixed">
 
             <div>
 
                 <div class="bg-white/50 h-auto w-full sm:rounded-lg py-10">
-                    <div id="inicio" class=" h-[300px]  w-[250px] border-[15px] pt-2 md:h-[700px] md:w-[600px] md:border-[35px] md:pt-32 sm:h-[500px] sm:w-[400px] sm:border-[20px] sm:pt-10 bg-[#f2a7ad] my-10 mx-auto border-white border-double rounded-3xl  ">
+                    <div id="inicio" class=" h-[350px]  w-[250px] border-[15px] pt-2 md:h-[700px] md:w-[600px] md:border-[35px] md:pt-32 sm:h-[500px] sm:w-[400px] sm:border-[20px] sm:pt-10 bg-[#ae9bd6] my-10 mx-auto border-white border-double rounded-3xl  ">
                         <div class="p-10 text-center">
 
                             <p class=" font-sans text-white font-bold text-xs -mb-10 mt-8 sm:text-lg sm:-mb-10 sm:mt-10 md:text-2xl md:-mb-10">ESTAS INVITADO A MI</p>
 
                         </div>
-                        <div class=" bg-[#ee8a92] h-16 sm:h-24 md:h-32 w-full text-center">
+                        <div class=" bg-[#9c76ed] h-16 sm:h-24 md:h-32 w-full text-center">
                             
                             
                             <p class=" font-paci text-white  text-3xl py-3 sm:text-5xl sm:py-6 md:text-6xl md:py-8">Cumpleaños</p>
                         </div>
-                        <div class=" bg-[#f2a7ad] hover:bg-[#ee8a92] mx-auto px-1 w-16 h-6 border-[2px] mt-5 sm:w-28 sm:h-12 sm:border-[3px] sm:py-1 sm:mt-20 md:w-32 md:h-12 md:border-[4px] md:py-1 md:mt-28 rounded-3xl border-white border-solid  text-center">
+                        <div class=" bg-[#ae9bd6] hover:bg-[#9c76ed] mx-auto px-1 w-16 h-6 border-[2px] mt-5 sm:w-28 sm:h-12 sm:border-[3px] sm:py-1 sm:mt-20 md:w-32 md:h-12 md:border-[4px] md:py-1 md:mt-28 rounded-3xl border-white border-solid  text-center">
                             <a href="#detalles" class=" text-white text-[9px] sm:text-sm md:text-base font-medium flex sm:px-2 py-1 ">
                                 Ver Detalles
                             <a>
                         </div>
 
                     </div>
-                    <div class="bg-white sm:h-[800px] md:h-[1000px] lg:h-[630px] w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pt-3 ">
+                    <div>
+                        <a href="#top" class="bg-[#9c76ed] h-10 w-10 fixed ml-3 pt-2 text-lg rounded-full text-center text-white">^<a>
                         
-                        <div id="detalles" class=" bg-white col-span-1 row-span-2 md:col-span-2 md:row-span-2 flex justify-center lg:pt-20">
-                            <div class=" pastel bg-auto bg-no-repeat bg-center md:border-[4px] border-white border-solid rounded-3xl"></div>
+                    </div>
+                    <div class="whibg-te sm:h-[800px] md:h-[1000px] lg:h-[630px] w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pt-3 ">
+                        
+                        <div id="detalles" class=" bg-white col-span-1 row-span-2 md:col-span-2 md:row-span-2 flex justify-center pt-3 lg:pt-20">
+                            <div class=" pastel bg-cover bg-no-repeat bg-center md:border-[4px] border-white border-solid rounded-3xl"></div>
                         </div>
                         <div class="bg-white col-span-1  md:col-span-2 px-8">
                             <div class=" text-center mt-10 ms:mt-12 md:mt-20 pb-5 ">
@@ -156,8 +172,8 @@
 
                 </div>
                 <div class="imagen bg-cover bg-fixed">
-                    <div class="bg-white/50 h-[900px] w-full pt-10 flex items-center flex-col">
-                        <div class="text-center bg-[#ee8a92] h-16 w-[250px] sm:h-24 sm:w-[500px] md:h-32 md:w-[600px] mx-auto rounded-t-lg">
+                    <div class="bg-white/50 h-[600px] md:h-[800px] w-full pt-10 flex items-center flex-col">
+                        <div class="text-center bg-[#9c76ed] h-16 w-[250px] sm:h-24 sm:w-[500px] md:h-32 md:w-[600px] mx-auto rounded-t-lg">
 
                             <h1 id="mapa" class=" font-paci text-white  text-3xl py-2  sm:text-5xl sm:py-6  md:text-6xl md:py-8">¿como llegar?</h1>
 
@@ -166,16 +182,90 @@
                         <div class="">
                             <iframe class="w-[250px] h-[350px] sm:w-[500px] sm:h-[450px] md:w-[600px] md:h-[450px] rounded-b-lg" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3735.8717644441185!2d-99.3275746!3d20.5524271!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb0cc8b6db4ed1dd8!2zMjDCsDMzJzEwLjkiTiA5OcKwMTknMzYuOSJX!5e0!3m2!1ses-419!2smx!4v1648794082733!5m2!1ses-419!2smx" width="" height="" style="" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        <div class=" bg-[#f2a7ad] hover:bg-[#ee8a92] mx-auto px-1 w-16 h-6 border-[2px] mt-5 sm:w-24 sm:h-12 sm:border-[3px] sm:py-1 sm:mt-20 md:w-28 md:h-12 md:border-[4px] md:py-1 md:mt-28 rounded-3xl border-white border-solid  text-center">
-                            <a href="#top" class=" text-white text-[9px] sm:text-sm md:text-base font-medium flex sm:px-2 py-1 ">
-                                Ir Arriba
-                            <a>
-                        </div>
+                        
                         
                     </div>
                 </div>
+                <div>
+                    <div id="confir" class="grid lg:grid-cols-2 lg:pt-12 md:grid-cols-1 sm:grid-cols-1">
+                        <div class=" ">
+                            <div class="py-12">
+                                <h3 class="lg:text-6xl md:text-4xl sm:text-2xl text-lg text-center font-medium leading-6 text-gray-900 font-paci">¡Confirma tu Asistencia!</h3>
+                                <p class="mt-3 font-sans px-3 font-bold text-center lg:text-4xl md:text-2xl sm:text-ms text-xs text-gray-700">Llena los campos con tus datos para confirmar la asistencia, Ya queremos verte.</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-center pb-10">
+                            <div class="ms:h-[400] h-[500px] w-[300px] sm:w-[400px] md:w-[500px] border-[20px] p-10 bg-[#ae9bd6] border-white border-double rounded-3xl flex flex-col space-y-4">
+                               
+                                <div>
+                                    <label for="first-name" class="block text-sm font-medium text-white">¿Cual es tu nombre?</label>
+                                    <input type="text" name="name" id="name" autocomplete="name" class="mt-1 h-7 sm:h-10 text-white border-4 bg-[#9c76ed] focus:ring-[#9c76ed] focus:border-[#ae9bd6] block w-full shadow-sm sm:text-sm border-white rounded-md">
+                                </div>
+                                <div>
+                                    <label for="last-name" class="block text-sm font-medium text-white">Numero de Telefono:</label>
+                                    <input type="text" name="number" id="number" autocomplete="tel" class="mt-1 h-7 sm:h-10 text-white border-4 bg-[#9c76ed] focus:ring-[#ae9bd6] focus:border-[#9c76ed] block w-full shadow-sm sm:text-sm border-white rounded-md">
 
+                                </div>
+                                <div>
+                                    <label for="email-address" class="block text-sm font-medium text-white">Email address</label>
+                                    <input type="text" name="email" id="address" autocomplete="email" class="mt-1 h-7 sm:h-10 text-white border-4 bg-[#9c76ed] focus:ring-[#ae9bd6] focus:border-[#9c76ed] block w-full shadow-sm sm:text-sm border-white rounded-md">
+
+                                </div>
+                                <div>
+                                    <label for="country" class="block text-sm font-medium text-white">Numero de Invitados</label>
+                                    <select id="country" name="invitado" class="mt-1 h-7 sm:h-10 text-white block w-full py-2 px-3 border-4 border-white bg-[#9c76ed] rounded-md shadow-sm focus:outline-none focus:ring-white focus:border-white sm:text-sm">
+                                        <option>0</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5 o mas</option>
+                                    </select>
+
+                                </div>
+                                <div class="py-3 mx-auto">
+
+
+                                   <button type="submit" name="enviar" 
+                                    data-sitekey="6Lc5CTofAAAAACImXthKLNH6oDiJORtIz4KipcpX" 
+                                    data-callback='onSubmit' 
+                                    data-action='submit' class="inline-flex justify-center g-recaptcha py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#9c76ed] hover:bg-[#9c76ed]/40 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#9c76ed]">Enviar</button>
+                                </div>
+
+                                <?php 
+                                    if (isset($_POST['enviar'])){
+                                        if (!empty($_POST['name']) && !empty($_POST['numero'])){
+                                            $name = $_POST['name'];
+                                            $bandeja = 'deividisi26@gmail.com';
+                                            $numero = $_POST['numero'];
+                                            $email = $_POST['email'];
+                                            $invitado = $_POST['invitado'];
+                                            $header = "From: noreply@example.com" . "\r\n";
+                                            $header.= "Reply-to: noreply@example.com" . "\r\n";
+                                            $header.= "X-Mailer: PHP/" . phpversion();
+                                            @mail($bandeja,$name,$numero,$email,$invitado,$header);
+                                            
+                                        }
+                                    }
+                                ?>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class=" h-48 w-auto bg-[#9c76ed] text-lg text-gray-700 py-20 text-center font-serif font-light">
+                        Photo by <a href="https://unsplash.com/@twinsfisch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Isabella and Zsa Fischer</a> on <a href="https://unsplash.com/s/photos/lavender?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+                    </div>
+                        
+                        
+                    
+                    
+                </div>
+                    
             </div>
+            
+        
             
         </div>
 
