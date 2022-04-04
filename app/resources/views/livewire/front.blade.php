@@ -5,13 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="{{ asset('css/front.css') }}" rel="stylesheet">
 	<title>Happy Birthday</title>
-	<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script>
-        function onSubmit(token) {
-          document.getElementById("demo-form").submit();
-        }
-    </script>
+	
     @livewireStyles
     <style>
         
@@ -126,7 +120,7 @@
 
                     </div>
                     <div>
-                        <a href="#top" class="bg-[#9c76ed] h-10 w-10 fixed ml-3 pt-2 text-lg rounded-full text-center text-white">^<a>
+                        <a href="#top" class="bg-purple-700 h-10 w-10 fixed ml-3 pt-2 text-lg rounded-full text-center text-white border-2 border-white border-solid">^<a>
                         
                     </div>
                     <div class="whibg-te sm:h-[800px] md:h-[1000px] lg:h-[630px] w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pt-3 ">
@@ -187,75 +181,62 @@
                     </div>
                 </div>
                 <div>
-                    <div id="confir" class="grid lg:grid-cols-2 lg:pt-12 md:grid-cols-1 sm:grid-cols-1">
+                    <div class="grid lg:grid-cols-2 lg:pt-12 md:grid-cols-1 sm:grid-cols-1">
                         <div class=" ">
                             <div class="py-12">
-                                <h3 class="lg:text-6xl md:text-4xl sm:text-2xl text-lg text-center font-medium leading-6 text-gray-900 font-paci">¡Confirma tu Asistencia!</h3>
+                                <h3 class="lg:text-6xl md:text-4xl sm:text-4xl text-2xl text-center font-medium leading-6 text-gray-900 font-paci">¡Confirma tu Asistencia!</h3>
                                 <p class="mt-3 font-sans px-3 font-bold text-center lg:text-4xl md:text-2xl sm:text-ms text-xs text-gray-700">Llena los campos con tus datos para confirmar la asistencia, Ya queremos verte.</p>
                             </div>
                         </div>
-                        <div class="flex justify-center pb-10">
-                            <div class="ms:h-[400] h-[500px] w-[300px] sm:w-[400px] md:w-[500px] border-[20px] p-10 bg-[#ae9bd6] border-white border-double rounded-3xl flex flex-col space-y-4">
-                               
-                                <div>
-                                    <label for="first-name" class="block text-sm font-medium text-white">¿Cual es tu nombre?</label>
-                                    <input type="text" name="name" id="name" autocomplete="name" class="mt-1 h-7 sm:h-10 text-white border-4 bg-[#9c76ed] focus:ring-[#9c76ed] focus:border-[#ae9bd6] block w-full shadow-sm sm:text-sm border-white rounded-md">
-                                </div>
-                                <div>
-                                    <label for="last-name" class="block text-sm font-medium text-white">Numero de Telefono:</label>
-                                    <input type="text" name="number" id="number" autocomplete="tel" class="mt-1 h-7 sm:h-10 text-white border-4 bg-[#9c76ed] focus:ring-[#ae9bd6] focus:border-[#9c76ed] block w-full shadow-sm sm:text-sm border-white rounded-md">
+                        <form id="confir" action="{{route('form')}}" method="POST">
+                           @csrf
+                            <div class="flex justify-center pb-10">
+                                <div class="ms:h-[300] h-[300px] w-[300px] sm:w-[400px] md:w-[500px] 2xl:w-[600px] border-[20px] p-10 bg-[#ae9bd6] border-white border-double rounded-3xl flex flex-col space-y-4">
+                                
+                                    <div>
+                                        <label for="first-name" class="block text-sm font-medium text-white">¿Cual es tu nombre?</label>
+                                        <input type="text" name="Nombre" autocomplete="name" class="mt-1 h-7 sm:h-10 text-white border-4 bg-[#9c76ed] focus:ring-[#9c76ed] focus:border-[#ae9bd6] block w-full shadow-sm sm:text-sm border-white rounded-md">
+                                    </div>
+                                    @error('Nombre')
+                                        <p><strong>{{$message}}</strong></p>
+                                        
+                                    @enderror
+                                    <div>
+                                        <label for="country" class="block text-sm font-medium text-white">Numero de Acompañantes:</label>
+                                        <select  name="invitado" class="mt-1 h-7 sm:h-10 text-white block w-full py-0 px-3 border-4 border-white bg-[#9c76ed] rounded-md shadow-sm focus:outline-none focus:ring-white focus:border-white sm:text-sm">
+                                            <option>0</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                        </select>
+
+                                    </div>
+                                    <div class="py-3 mx-auto">
+                                    <button type="submit" name="enviar" 
+                                         class="inline-flex justify-center g-recaptcha py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#9c76ed] hover:bg-[#9c76ed]/40 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#9c76ed]">Enviar</button>
+                                   {{-- <button type="submit" name="enviar" 
+                                        data-sitekey="6Lc5CTofAAAAACImXthKLNH6oDiJORtIz4KipcpX" 
+                                        data-callback='onSubmit' 
+                                        data-action='submit' class="inline-flex justify-center g-recaptcha py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#9c76ed] hover:bg-[#9c76ed]/40 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#9c76ed]">Enviar</button>--}}
+                                    </div>
+                                    @if (session('info'))
+                                        <script>
+                                            alert("{{session('info')}}");
+                                        </script>
+  
+                                    @endif
 
                                 </div>
-                                <div>
-                                    <label for="email-address" class="block text-sm font-medium text-white">Email address</label>
-                                    <input type="text" name="email" id="address" autocomplete="email" class="mt-1 h-7 sm:h-10 text-white border-4 bg-[#9c76ed] focus:ring-[#ae9bd6] focus:border-[#9c76ed] block w-full shadow-sm sm:text-sm border-white rounded-md">
-
-                                </div>
-                                <div>
-                                    <label for="country" class="block text-sm font-medium text-white">Numero de Invitados</label>
-                                    <select id="country" name="invitado" class="mt-1 h-7 sm:h-10 text-white block w-full py-2 px-3 border-4 border-white bg-[#9c76ed] rounded-md shadow-sm focus:outline-none focus:ring-white focus:border-white sm:text-sm">
-                                        <option>0</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5 o mas</option>
-                                    </select>
-
-                                </div>
-                                <div class="py-3 mx-auto">
-
-
-                                   <button type="submit" name="enviar" 
-                                    data-sitekey="6Lc5CTofAAAAACImXthKLNH6oDiJORtIz4KipcpX" 
-                                    data-callback='onSubmit' 
-                                    data-action='submit' class="inline-flex justify-center g-recaptcha py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#9c76ed] hover:bg-[#9c76ed]/40 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#9c76ed]">Enviar</button>
-                                </div>
-
-                                <?php 
-                                    if (isset($_POST['enviar'])){
-                                        if (!empty($_POST['name']) && !empty($_POST['numero'])){
-                                            $name = $_POST['name'];
-                                            $bandeja = 'deividisi26@gmail.com';
-                                            $numero = $_POST['numero'];
-                                            $email = $_POST['email'];
-                                            $invitado = $_POST['invitado'];
-                                            $header = "From: noreply@example.com" . "\r\n";
-                                            $header.= "Reply-to: noreply@example.com" . "\r\n";
-                                            $header.= "X-Mailer: PHP/" . phpversion();
-                                            @mail($bandeja,$name,$numero,$email,$invitado,$header);
-                                            
-                                        }
-                                    }
-                                ?>
-
                             </div>
-                        </div>
+                         </form>
                         
                     </div>
-                    <div class=" h-48 w-auto bg-[#9c76ed] text-lg text-gray-700 py-20 text-center font-serif font-light">
-                        Photo by <a href="https://unsplash.com/@twinsfisch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Isabella and Zsa Fischer</a> on <a href="https://unsplash.com/s/photos/lavender?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
+                    <div class=" h-48 w-auto bg-[#9c76ed] ">
+                        <div class=" text-xs md:text-ms text-white pt-16 text-center font-serif font-thin ">
+                            Photo by <a href="https://unsplash.com/@twinsfisch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Isabella and Zsa Fischer</a> on <a href="https://unsplash.com/s/photos/lavender?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                        </div>
+                        <div class=" text-lg md:text-xl text-white py-3 text-center font-serif font-medium">
+                            <a href="https://www.ninacode.mx/">(C) Copy right 2022 - By Nina Code</a>
+                        </div>
                     </div>
                         
                         
@@ -270,5 +251,12 @@
         </div>
 
         @livewireScripts
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        {{--<script src="https://www.google.com/recaptcha/api.js"></script>
+        <script>
+            function onSubmit(token) {
+            document.getElementById("demo-form").submit();
+            }
+        </script>--}}
     </body>
 </html>

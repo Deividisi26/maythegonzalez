@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\emailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,4 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', App\Http\Livewire\Front::class);
+Route::get('/', App\Http\Livewire\Front::class)->name('front');
+
+Route::get( '/', [emailController::class, 'index'])->name('livewire.index');
+
+Route::post( 'email/confirmacion', [emailController::class, 'store'])->name('form');
