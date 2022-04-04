@@ -95,6 +95,7 @@
     </style>
     </head>
     <body>
+        @livewire('navigation')
         
         <div class="imagen bg-cover bg-fixed">
 
