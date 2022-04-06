@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="{{ asset('css/front.css') }}" rel="stylesheet">
-	<title>Happy Birthday</title>
+	<title>It's my Birthday</title>
 	
     @livewireStyles
     <style>
@@ -102,18 +102,18 @@
             <div>
 
                 <div class="bg-white/50 h-auto w-full sm:rounded-lg py-10">
-                    <div id="inicio" class=" h-[350px]  w-[250px] border-[15px] pt-2 md:h-[700px] md:w-[600px] md:border-[35px] md:pt-32 sm:h-[500px] sm:w-[400px] sm:border-[20px] sm:pt-10 bg-[#ae9bd6] my-10 mx-auto border-white border-double rounded-3xl  ">
-                        <div class="p-10 text-center">
-
-                            <p class=" font-sans text-white font-bold text-xs -mb-10 mt-8 sm:text-lg sm:-mb-10 sm:mt-10 md:text-2xl md:-mb-10">ESTAS INVITADO A MI</p>
+                    <div id="inicio" class=" h-[350px]  w-[250px] border-[15px] pt-2 md:h-[700px] md:w-[600px] md:border-[35px] md:pt-5 sm:h-[500px] sm:w-[400px] sm:border-[20px] sm:pt-10 bg-[#ae9bd6] my-10 mx-auto border-white border-double rounded-3xl  ">
+                        <div class="px-3 md:px-10 pt-1 md:pt-10 text-center">
+                            <p class=" font-paci text-white font-medium text-xs  mt-1 sm:text-sm text-justify  sm:mt-2 md:text-xl">"Aunque estemos lejos ahora nuestros corazones siguen siendo los mismos, ¿no es así?. Incluso si no estás a mi lado, incluso si no estoy a tu lado. Sabes que estamos juntos" - SUGA</p>
+                            <p class=" font-sans text-white font-bold text-xs  mt-2  sm:text-lg  sm:mt-5 md:text-2xl ">CELEBRA CONMIGO</p>
 
                         </div>
-                        <div class=" bg-[#9c76ed] h-16 sm:h-24 md:h-32 w-full text-center">
+                        <div class=" bg-[#9c76ed] h-16 sm:h-24 md:h-32 mt-3 w-full text-center">
                             
                             
-                            <p class=" font-paci text-white  text-3xl py-3 sm:text-5xl sm:py-6 md:text-6xl md:py-8">Cumpleaños</p>
+                            <p class=" font-paci text-white  text-2xl py-3 sm:text-4xl sm:py-6 md:text-5xl md:py-8">¡Otra vuelta al Sol!</p>
                         </div>
-                        <div class=" bg-[#ae9bd6] hover:bg-[#9c76ed] mx-auto px-1 w-16 h-6 border-[2px] mt-5 sm:w-28 sm:h-12 sm:border-[3px] sm:py-1 sm:mt-20 md:w-32 md:h-12 md:border-[4px] md:py-1 md:mt-28 rounded-3xl border-white border-solid  text-center">
+                        <div class=" bg-[#ae9bd6] hover:bg-[#9c76ed] mx-auto px-1 w-16 h-6 border-[2px] mt-5 sm:w-28 sm:h-12 sm:border-[3px] sm:py-1 sm:mt-10 md:w-32 md:h-12 md:border-[4px] md:py-1 md:mt-20 rounded-3xl border-white border-solid  text-center">
                             <a href="#detalles" class=" text-white text-[9px] sm:text-sm md:text-base font-medium flex sm:px-2 py-1 ">
                                 Ver Detalles
                             <a>
@@ -131,11 +131,10 @@
                         </div>
                         <div class="bg-white col-span-1  md:col-span-2 px-8">
                             <div class=" text-center mt-10 ms:mt-12 md:mt-20 pb-5 ">
-                                <h1 class=" font-paci font-bold text-gray-800 text-3xl sm:text-4xl md:text-6xl">¡Te Esperamos!</h1>
-                                <p class=" font-sans font-bold text-gray-700 text-base sm:text-lg md:text-2xl mt-10 text-justify ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                    Quam id leo in vitae turpis massa. Placerat duis ultricies lacus sed 
-                                    turpis tincidunt id aliquet risus. Risus quis varius quam quisque id diam vel quam.</p>
+                                
+                                <p class=" font-sans font-bold text-gray-700 text-base sm:text-lg md:text-2xl mt-10 text-justify ">La vida es un ciclo infinito de principios y finales, el fin de un ciclo es el principio de algo nuevo. 
+                                    Hoy celebro la vida que se me ha acumulado, la que te puso en mi camino, y la que me permite una vez más verte, sonreír juntos y crear nuevos recuerdos. 
+                                    Acompáñame y festejemos juntos este momento tan especial.</p>
 
                             </div>
                         </div>
@@ -186,7 +185,7 @@
                         <div class=" ">
                             <div class="py-12">
                                 <h3 class="lg:text-6xl md:text-4xl sm:text-4xl text-2xl text-center font-medium leading-6 text-gray-900 font-paci">¡Confirma tu Asistencia!</h3>
-                                <p class="mt-3 font-sans px-3 font-bold text-center lg:text-4xl md:text-2xl sm:text-ms text-xs text-gray-700">Llena los campos con tus datos para confirmar la asistencia, Ya queremos verte.</p>
+                                <p class="mt-3 font-sans px-3 font-bold text-center lg:text-4xl md:text-2xl sm:text-ms text-xs text-gray-700">.</p>
                             </div>
                         </div>
                         <form id="confir" action="{{route('form')}}" method="POST">
@@ -195,7 +194,7 @@
                                 <div class="ms:h-[300] h-[300px] w-[300px] sm:w-[400px] md:w-[500px] 2xl:w-[600px] border-[20px] p-10 bg-[#ae9bd6] border-white border-double rounded-3xl flex flex-col space-y-4">
                                 
                                     <div>
-                                        <label for="first-name" class="block text-sm font-medium text-white">¿Cual es tu nombre?</label>
+                                        <label for="first-name" class="block text-sm font-medium text-white">Nombre:</label>
                                         <input type="text" name="Nombre" autocomplete="name" class="mt-1 h-7 sm:h-10 text-white border-4 bg-[#9c76ed] focus:ring-[#9c76ed] focus:border-[#ae9bd6] block w-full shadow-sm sm:text-sm border-white rounded-md">
                                     </div>
                                     @error('Nombre')
@@ -203,9 +202,8 @@
                                         
                                     @enderror
                                     <div>
-                                        <label for="country" class="block text-sm font-medium text-white">Numero de Acompañantes:</label>
+                                        <label for="country" class="block text-sm font-medium text-white">Personas:</label>
                                         <select  name="invitado" class="mt-1 h-7 sm:h-10 text-white block w-full py-0 px-3 border-4 border-white bg-[#9c76ed] rounded-md shadow-sm focus:outline-none focus:ring-white focus:border-white sm:text-sm">
-                                            <option>0</option>
                                             <option>1</option>
                                             <option>2</option>
                                         </select>
