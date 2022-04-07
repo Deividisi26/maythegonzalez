@@ -4,14 +4,26 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="{{ asset('css/front.css') }}" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 	<title>It's my Birthday</title>
 	
     @livewireStyles
     <style>
-        
+        .covid{ 
+            background-image: url("{{asset('img/c7.png')}}");
+            height: 300px;
+            width: 480px;
+            
+        }
         .imagen{ 
             background-image: url("{{asset('img/f0.jpg')}}");
             height: 600px;
+        }
+        .imagen2{ 
+            background-image: url("{{asset('img/f0.jpg')}}");
+            height: 400px;
         }
         
         .pastel{
@@ -54,6 +66,7 @@
             background-image: url("{{asset('img/c2.png')}}");
             width: 50px;
             height: 50px;
+
             
            
             }
@@ -78,6 +91,8 @@
             background-image: url("{{asset('img/f0.jpg')}}");
             height: 800px;
             }
+
+            
             
 
         }
@@ -89,6 +104,7 @@
             
            
             }
+            
 
         }
         
@@ -104,8 +120,8 @@
                 <div class="bg-white/50 h-auto w-full sm:rounded-lg py-10">
                     <div id="inicio" class=" h-[350px]  w-[250px] border-[15px] pt-2 md:h-[700px] md:w-[600px] md:border-[35px] md:pt-5 sm:h-[500px] sm:w-[400px] sm:border-[20px] sm:pt-10 bg-[#ae9bd6] my-10 mx-auto border-white border-double rounded-3xl  ">
                         <div class="px-3 md:px-10 pt-1 md:pt-10 text-center">
-                            <p class=" font-paci text-white font-medium text-xs  mt-1 sm:text-sm text-justify  sm:mt-2 md:text-xl">"Aunque estemos lejos ahora nuestros corazones siguen siendo los mismos, ¿no es así?. Incluso si no estás a mi lado, incluso si no estoy a tu lado. Sabes que estamos juntos" - SUGA</p>
-                            <p class=" font-sans text-white font-bold text-xs  mt-2  sm:text-lg  sm:mt-5 md:text-2xl ">CELEBRA CONMIGO</p>
+                            <p class=" font-paci text-white font-extralight text-xs  mt-5 sm:text-sm text-justify  sm:mt-2 md:text-xl">"Aunque estemos lejos ahora nuestros corazones siguen siendo los mismos, ¿no es así?. Incluso si no estás a mi lado, incluso si no estoy a tu lado. Sabes que estamos juntos" - SUGA</p>
+                            <p class=" font-sans text-white font-bold text-xs pt-10 sm:text-lg ms:pt-6 sm:mt-10 md:pt-16 md:text-2xl ">CELEBRA CONMIGO</p>
 
                         </div>
                         <div class=" bg-[#9c76ed] h-16 sm:h-24 md:h-32 mt-3 w-full text-center">
@@ -113,7 +129,7 @@
                             
                             <p class=" font-paci text-white  text-2xl py-3 sm:text-4xl sm:py-6 md:text-5xl md:py-8">¡Otra vuelta al Sol!</p>
                         </div>
-                        <div class=" bg-[#ae9bd6] hover:bg-[#9c76ed] mx-auto px-1 w-16 h-6 border-[2px] mt-5 sm:w-28 sm:h-12 sm:border-[3px] sm:py-1 sm:mt-10 md:w-32 md:h-12 md:border-[4px] md:py-1 md:mt-20 rounded-3xl border-white border-solid  text-center">
+                        <div class=" bg-[#ae9bd6] hover:bg-[#9c76ed] mx-auto px-1 w-16 h-6 border-[2px] mt-3 sm:w-28 sm:h-12 sm:border-[3px] sm:py-1 sm:mt-8 md:w-32 md:h-12 md:border-[4px] md:py-1 md:mt-16 rounded-3xl border-white border-solid  text-center">
                             <a href="#detalles" class=" text-white text-[9px] sm:text-sm md:text-base font-medium flex sm:px-2 py-1 ">
                                 Ver Detalles
                             <a>
@@ -121,7 +137,7 @@
 
                     </div>
                     <div>
-                        <a href="#top" class="bg-purple-700 h-10 w-10 fixed ml-3 pt-2 text-lg rounded-full text-center text-white border-2 border-white border-solid">^<a>
+                        <a href="#top" class="bg-purple-700  fixed bottom-0 left-0 h-10 w-10  ml-3 mb-3 pt-2 text-lg rounded-full text-center text-white border-2 border-white border-solid">^<a>
                         
                     </div>
                     <div class="whibg-te sm:h-[800px] md:h-[1000px] lg:h-[630px] w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pt-3 ">
@@ -185,7 +201,7 @@
                         <div class=" ">
                             <div class="py-12">
                                 <h3 class="lg:text-6xl md:text-4xl sm:text-4xl text-2xl text-center font-medium leading-6 text-gray-900 font-paci">¡Confirma tu Asistencia!</h3>
-                                <p class="mt-3 font-sans px-3 font-bold text-center lg:text-4xl md:text-2xl sm:text-ms text-xs text-gray-700">.</p>
+                                
                             </div>
                         </div>
                         <form id="confir" action="{{route('form')}}" method="POST">
@@ -210,13 +226,9 @@
 
                                     </div>
                                     <div class="py-3 mx-auto">
-                                    <button type="submit" name="enviar" 
+                                    <button id="confirmar" type="button" name="enviar" 
                                          class="inline-flex justify-center g-recaptcha py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#9c76ed] hover:bg-[#9c76ed]/40 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#9c76ed]">Enviar</button>
-                                   {{-- <button type="submit" name="enviar" 
-                                        data-sitekey="6Lc5CTofAAAAACImXthKLNH6oDiJORtIz4KipcpX" 
-                                        data-callback='onSubmit' 
-                                        data-action='submit' class="inline-flex justify-center g-recaptcha py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#9c76ed] hover:bg-[#9c76ed]/40 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#9c76ed]">Enviar</button>--}}
-                                    </div>
+                                    
                                     @if (session('info'))
                                         <script>
                                             alert("{{session('info')}}");
@@ -224,24 +236,23 @@
   
                                     @endif
 
+                                
                                 </div>
                             </div>
                          </form>
                         
                     </div>
-                    <div class=" h-48 w-auto bg-[#9c76ed] ">
-                        <div class=" text-xs md:text-ms text-white pt-16 text-center font-serif font-thin ">
-                            Photo by <a href="https://unsplash.com/@twinsfisch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Isabella and Zsa Fischer</a> on <a href="https://unsplash.com/s/photos/lavender?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                        </div>
-                        <div class=" text-lg md:text-xl text-white py-3 text-center font-serif font-medium">
-                            <a href="https://www.ninacode.mx/">(C) Copy right 2022 - By Nina Code</a>
-                        </div>
-                    </div>
-                        
-                        
-                    
                     
                 </div>
+                <div class="imagen2 bg-cover bg-fixed">
+                    <div class="bg-white/50 h-[600px] md:h-[600px] w-full pt-10 flex justify-center">
+
+                        <div class="covid bg-contain bg-no-repeat mx-9"></div>
+                    
+                    </div>
+
+                </div>
+                
                     
             </div>
             
@@ -250,12 +261,34 @@
         </div>
 
         @livewireScripts
-        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-        {{--<script src="https://www.google.com/recaptcha/api.js"></script>
+        
+        <script src="https://www.google.com/recaptcha/api.js?render=6Lc5CTofAAAAACImXthKLNH6oDiJORtIz4KipcpX"></script>
         <script>
-            function onSubmit(token) {
-            document.getElementById("demo-form").submit();
-            }
-        </script>--}}
+			$(document).ready(function() {
+				$('#confirmar').click(function() {
+					grecaptcha.ready(function() {
+						grecaptcha.execute('6Lc5CTofAAAAACImXthKLNH6oDiJORtIz4KipcpX', {
+							action: 'validarUsuario'
+							}).then(function(token) {
+							$('#confir').prepend('<input type="hidden" name="token" value="' + token + '" >');
+							$('#confir').prepend('<input type="hidden" name="action" value="validarUsuario" >');
+							$('#confir').submit();
+						});
+					});
+				});
+			});
+		</script>
     </body>
+    <footer>
+        <div class=" h-48 w-auto bg-[#9c76ed] ">
+            <div class=" text-xs md:text-ms text-white pt-16 text-center font-serif font-thin ">
+                Photo by <a href="https://unsplash.com/@twinsfisch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Isabella and Zsa Fischer</a> on <a href="https://unsplash.com/s/photos/lavender?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </div>
+            <div class=" text-lg md:text-xl text-white py-3 text-center font-serif font-medium">
+                <a href="https://www.ninacode.mx/">(C) Copy right 2022 - By Nina Code</a>
+            </div>
+        </div>
+            
+
+    </footer>
 </html>

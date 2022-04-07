@@ -19,3 +19,4 @@ Route::get('/', App\Http\Livewire\Front::class)->name('front');
 Route::get( '/', [emailController::class, 'index'])->name('livewire.index');
 
 Route::post( 'email/confirmacion', [emailController::class, 'store'])->name('form');
+
