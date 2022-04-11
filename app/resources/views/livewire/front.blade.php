@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="{{ asset('css/front.css') }}" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+		
         <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 	<title>It's my Birthday</title>
 	
@@ -120,7 +120,7 @@
                 <div class="bg-white/50 h-auto w-full sm:rounded-lg py-10">
                     <div id="inicio" class=" h-[350px]  w-[250px] border-[15px] pt-2 md:h-[700px] md:w-[600px] md:border-[35px] md:pt-5 sm:h-[500px] sm:w-[400px] sm:border-[20px] sm:pt-10 bg-[#ae9bd6] my-10 mx-auto border-white border-double rounded-3xl  ">
                         <div class="px-3 md:px-10 pt-1 md:pt-10 text-center">
-                            <p class=" font-paci text-white font-extralight text-xs  mt-5 sm:text-sm text-justify  sm:mt-2 md:text-xl">"Aunque estemos lejos ahora nuestros corazones siguen siendo los mismos, ¿no es así?. Incluso si no estás a mi lado, incluso si no estoy a tu lado. Sabes que estamos juntos" - SUGA</p>
+                            <p class=" font-paci text-white font-extralight text-xs  mt-5 sm:text-sm text-justify  sm:mt-2 md:text-xl">"Aunque estemos lejos, nuestros corazones siguen siendo los mismos, ¿no es así?. Incluso si no estás a mi lado, incluso si no estoy a tu lado. Sabes que estamos juntos" - Suga</p>
                             <p class=" font-sans text-white font-bold text-xs pt-10 sm:text-lg ms:pt-6 sm:mt-10 md:pt-16 md:text-2xl ">CELEBRA CONMIGO</p>
 
                         </div>
