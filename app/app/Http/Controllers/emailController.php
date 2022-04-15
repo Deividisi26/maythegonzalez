@@ -41,7 +41,7 @@ class emailController extends Controller{
             ]);
    
             $correo = new email($request->all());
-            Mail::to('deividisi26@gmail.com')->send($correo);
+            Mail::to('maythe.glezgtz@gmail.com')->send($correo);
             return redirect()->route('livewire.index')->with('info', 'Gracias por confirmar.');
 			
          }

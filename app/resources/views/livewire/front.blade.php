@@ -288,6 +288,9 @@
             <div class=" text-xs md:text-ms text-white pt-16 text-center font-serif font-thin ">
                 Photo by <a href="https://unsplash.com/@twinsfisch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Isabella and Zsa Fischer</a> on <a href="https://unsplash.com/s/photos/lavender?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
             </div>
+            <div class=" text-xs md:text-ms text-white pt-3 text-center font-serif font-thin ">
+                <a href="https://www.nacionrex.com/kpop/bts-el-rapero-que-rechazo-ser-integrante-de-la-banda-y-sus-razones-20210811-0001.html">BTS Image by nacionrex</a>
+            </div>
             <div class=" text-lg md:text-xl text-white py-3 text-center font-serif font-medium">
                 <a href="https://www.ninacode.mx/">(C) Copy right 2022 - By Nina Code</a>
             </div>
