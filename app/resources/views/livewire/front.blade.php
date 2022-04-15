@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html prefix="og: https://ogp.me/ns#">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,10 @@
 		
         <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 	<title>It's my Birthday</title>
-    <meta property="og:title" content="It's my Birthday 3" />
-    <meta property="og:image" content=url("{{asset('img/c7.png')}}") />
+    <meta property="og:title" content="It's my Birthday" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://maythegonzalez.com/" />
+    <meta property="og:image" content="https://www.nacionrex.com/__export/1628691133741/sites/debate/img/2021/08/11/bts-beenzino-integrante-por-que-rechazo-la-oferta_1_crop1628691108346.jpg_1364161016.jpg" />
 	
     @livewireStyles
     <style>
