@@ -8,8 +8,8 @@
 		
         <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 	<title>It's my Birthday</title>
-    <meta property="og:title" content="It's my Birthday" />
-    <meta property="og:image" content="url("{{asset("img/c7.png")}}")" />
+    <meta property="og:title" content="It's my Birthday 3" />
+    <meta property="og:image" content=url("{{asset('img/c7.png')}}") />
 	
     @livewireStyles
     <style>
