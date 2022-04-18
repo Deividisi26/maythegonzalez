@@ -11,7 +11,7 @@
     <meta property="og:title" content="It's my Birthday" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://maythegonzalez.com/" />
-    <meta property="og:image" content="https://www.nacionrex.com/__export/1628691133741/sites/debate/img/2021/08/11/bts-beenzino-integrante-por-que-rechazo-la-oferta_1_crop1628691108346.jpg_1364161016.jpg" />
+    <meta property="og:image" content="{{asset('img/b1.jpeg')}}" />
 	
     @livewireStyles
     <style>
@@ -289,7 +289,7 @@
                 Photo by <a href="https://unsplash.com/@twinsfisch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Isabella and Zsa Fischer</a> on <a href="https://unsplash.com/s/photos/lavender?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
             </div>
             <div class=" text-xs md:text-ms text-white pt-3 text-center font-serif font-thin ">
-                <a href="https://www.nacionrex.com/kpop/bts-el-rapero-que-rechazo-ser-integrante-de-la-banda-y-sus-razones-20210811-0001.html">BTS Image by nacionrex</a>
+                Photo by <a href="https://unsplash.com/@jennie_ra?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jennie Razumnaya</a> on <a href="https://unsplash.com/s/photos/birthday-envelope?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
             </div>
             <div class=" text-lg md:text-xl text-white py-3 text-center font-serif font-medium">
                 <a href="https://www.ninacode.mx/">(C) Copy right 2022 - By Nina Code</a>
