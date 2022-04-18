@@ -133,9 +133,9 @@
                             
                             <p class=" font-paci text-white  text-2xl py-3 sm:text-4xl sm:py-6 md:text-5xl md:py-8">¡Otra vuelta al Sol!</p>
                         </div>
-                        <div class=" bg-[#ae9bd6] hover:bg-[#9c76ed] mx-auto px-1 w-20 h-6 border-[2px] mt-3 sm:w-28 sm:h-12 sm:border-[3px] sm:py-1 sm:mt-8 md:w-32 md:h-12 md:border-[4px] md:py-1 md:mt-16 rounded-3xl border-white border-solid  text-center">
-                            <a href="#detalles" class=" text-white text-[9px] sm:text-sm md:text-base font-medium flex sm:px-2 py-1 ">
-                                Ver Detalles
+                        <div class=" bg-[#ae9bd6] hover:bg-[#9c76ed] mx-auto px-1 w-16 h-6 border-[2px] mt-3 sm:w-28 sm:h-12 sm:border-[3px] sm:py-1 sm:mt-8 md:w-32 md:h-12 md:border-[4px] md:py-1 md:mt-16 rounded-3xl border-white border-solid  text-center">
+                            <a href="#detalles" class=" text-white text-[9px] sm:text-sm md:text-base font-medium flex sm:px-2 py-1 justify-center ">
+                                Detalles
                             <a>
                         </div>
 
